@@ -13,7 +13,7 @@ const Login = ({ renderSignup }: LoginProps) => {
 
   const onSubmit = () => {
     axios
-      .post("/login", {
+      .post("https://jb-mern-todo.herokuapp.com/login", {
         username: username,
         password: password,
       })

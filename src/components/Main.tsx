@@ -7,7 +7,9 @@ const Main = () => {
   const [todoList, setTodoList] = useState<Todo[]>([]);
   useEffect(() => {
     axios
-      .get("/todos", { headers: { token: localStorage.getItem("token") } })
+      .get("https://jb-mern-todo.herokuapp.com/todos", {
+        headers: { token: localStorage.getItem("token") },
+      })
       .then(({ status, data }) => {
         if (status === 200) {
           setTodoList(data.todos);

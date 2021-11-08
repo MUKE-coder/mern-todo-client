@@ -11,12 +11,12 @@ const Signup = ({ renderLogin }: SignupProps) => {
 
   const onSubmit = () => {
     axios
-      .post("/signup", {
+      .post("https://jb-mern-todo.herokuapp.com/signup", {
         username: username,
         password: password,
       })
       .then((res) => {
-        console.log(res);
+        window.location.href = "/";
       });
   };
 

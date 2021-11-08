@@ -31,7 +31,7 @@ const TodoForm = ({ todos, setTodos }: TodoFormProps) => {
     if (title.length > 0) {
       axios
         .post(
-          "/todos",
+          "https://jb-mern-todo.herokuapp.com/todos",
           { title: title, description: description },
           { headers: { token: localStorage.getItem("token") } }
         )
