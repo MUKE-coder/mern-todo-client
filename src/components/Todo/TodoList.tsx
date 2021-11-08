@@ -18,7 +18,7 @@ const TodoList = ({ todos, setTodos }: TodoListProps) => {
   const markCompleted = (todo: Todo) => {
     axios
       .put(
-        `https://jb-mern-todo.herokuapp.com/todo/${todo._id}`,
+        `https://jb-mern-todo.herokuapp.com/todo/${todo._id}/`,
         {},
         { headers: { token: localStorage.getItem("token") } }
       )

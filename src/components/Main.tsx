@@ -7,7 +7,7 @@ const Main = () => {
   const [todoList, setTodoList] = useState<Todo[]>([]);
   useEffect(() => {
     axios
-      .get("https://jb-mern-todo.herokuapp.com/todos", {
+      .get("https://jb-mern-todo.herokuapp.com/todos/", {
         headers: { token: localStorage.getItem("token") },
       })
       .then(({ status, data }) => {

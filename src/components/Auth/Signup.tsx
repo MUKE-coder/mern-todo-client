@@ -11,7 +11,7 @@ const Signup = ({ renderLogin }: SignupProps) => {
 
   const onSubmit = () => {
     axios
-      .post("https://jb-mern-todo.herokuapp.com/signup", {
+      .post("https://jb-mern-todo.herokuapp.com/signup/", {
         username: username,
         password: password,
       })
