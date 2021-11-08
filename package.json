@@ -52,5 +52,5 @@
     "react-router-dom": "^5.2.0",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3"
   },
-  "proxy": "http://localhost:5000"
+  "proxy": "https://jb-mern-todo.herokuapp.com"
 }
